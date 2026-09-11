@@ -1,368 +1,574 @@
+
 @charset "UTF-8";
+
 @font-face {
-    font-family:'FonteLogo' ;
-    src: url(./_fonts/bubblegum-sans-regular.otf);
+    font-family: 'FonteLogo';
+    src: url('./_fonts/bubblegum-sans-regular.otf');
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
 
+
 /* ==============================
-RESET
+   RESET
 ============================== */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  }
-
-body {
-background-color: #dddddd;
-font-family: 'Titillium Web', Arial, sans-serif;
-color: #333333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-div#interface {
-width: 900px;
-margin: -20px auto 10px auto;
-background-color: #ffffff;
-padding: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-}
 
 /* ==============================
-CABEÇALHO
+   BODY
+============================== */
+
+body {
+    background-color: #dddddd;
+    font-family: 'Titillium Web', Arial, sans-serif;
+    color: #333333;
+}
+
+
+/* ==============================
+   INTERFACE
+============================== */
+
+div#interface {
+    width: 1000px;
+    margin: -20px auto 10px auto;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+
+/* ==============================
+   CABEÇALHO
 ============================== */
 
 header#cabecalho {
-position: relative;
-height: 180px;
-border-bottom: 1px solid #606060;
-background: url("./_imagens/glass-logo-peq.jpg")no-repeat 0px 100px;
+    position: relative;
+    height: 200px;
+    border-bottom: 1px solid #606060;
+
+    background: url('./_imagens/glass-logo-peq.jpg')
+        no-repeat 0px 100px;
 }
 
 header#cabecalho hgroup {
-position: absolute;
-left: 20px;
-top: 20px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
 }
 
 header#cabecalho h1 {
-font-family: 'FonteLogo';
-margin-bottom: 0px;
-padding: 0px;
-font-size: 30pt;
-color: #606060;
-font-weight: 600;
-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-family: 'FonteLogo';
+    margin: 0;
+    padding: 0;
+    font-size: 30pt;
+    color: #606060;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
 header#cabecalho h2 {
-    font-family: 'Titillium Web',sans-serif;
-margin-top: 0px;
-font-size: 20px;
-padding: 0px;
-color: #888888;
-font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #888888;
+    font-weight: 400;
 }
 
-img#icone {
-position: absolute;
-right: 20px;
-top: 10px;
-width: 180px;
-}
 
 /* ==============================
-MENU
+   ÍCONE
+============================== */
+
+img#icone {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 180px;
+}
+
+
+/* ==============================
+   MENU
 ============================== */
 
 nav#menu {
-position: absolute;
-left: 0;
-bottom: 0;
-width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    background-color: #dddddd;
+
+    padding: 10px;
 }
 
 nav#menu h1 {
-display: none;
+    display: none;
 }
 
 nav#menu ul {
-list-style: none;
-display: flex;
-justify-content: center;
-gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    list-style: none;
 }
 
 nav#menu li {
-display: inline-block;
+    display: inline-block;
 }
 
 nav#menu a {
-display: block;
-padding: 8px 15px;
-color: #606060;
-text-decoration: none;
-font-size: 17px;
-transition: 0.3s;
+    display: block;
+
+    padding: 8px 15px;
+
+    color: #606060;
+    text-decoration: none;
+
+    font-size: 17px;
+
+    transition: 0.3s;
 }
 
 nav#menu a:hover {
-color: #ffffff;
-background-color: #606060;
-border-radius: 5px;
+    color: #ffffff;
+    background-color: #606060;
+
+    border-radius: 5px;
 }
 
+
 /* ==============================
-CONTEÚDO
+   CONTEÚDO PRINCIPAL
 ============================== */
 
 main#principal {
-display: flex;
-gap: 30px;
-padding: 20px;
+    display: flex;
+
+    gap: 30px;
+
+    padding: 20px;
 }
 
-section#corpo {
-display: block;
-width: 650px;
-float: left;
-}
-
-aside#lateral {
-display: block;
-width: 350px;
-border-left: 1px solid #cccccc;
-padding-left: 20px;
-}
 
 /* ==============================
-TABELA
+   CORPO
 ============================== */
-table#tabelaspec {
-    border: 1px solid #333333;
-}
-table#tabelaspec td{ 
-    border: 1px solid #606060;
-    padding: 10px;
 
+section#corpo {
+    width: 650px;
 }
+
+
+/* ==============================
+   LATERAL
+============================== */
+
+aside#lateral {
+    width: 350px;
+
+    border-left: 1px solid #cccccc;
+
+    padding-left: 20px;
+}
+
+
+/* ==============================
+   CABEÇALHO DO ARTIGO
+============================== */
+
+article#noticia-principal h1 {
+    font-size: 28px;
+
+    color: #606060;
+
+    margin-bottom: 5px;
+}
+
+article#noticia-principal h2 {
+    color: #606060;
+
+    font-size: 22px;
+
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+article#noticia-principal h3 {
+    font-size: 15px;
+
+    color: #888888;
+}
+
+
+/* ==============================
+   PARÁGRAFOS
+============================== */
+
+article#noticia-principal p {
+    text-align: justify;
+
+    text-indent: 30px;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+.direita {
+    text-align: right;
+}
+
+
+/* ==============================
+   TABELA
+============================== */
+
+table#tabelaspec {
+    width: 100%;
+
+    border: 1px solid #333333;
+
+    border-collapse: collapse;
+
+    margin: 20px 0;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+
+    padding: 10px;
+}
+
 table#tabelaspec td.ce {
     color: #ffffff;
+
     background-color: #606060;
+
     vertical-align: top;
-    font-weight: bolder;
+
+    font-weight: bold;
+
+    width: 35%;
 }
-table#tabelaspec td.cd
-{
+
+table#tabelaspec td.cd {
     background-color: #cecece;
 }
-table#tabelaspec caption{
+
+table#tabelaspec caption {
     color: #888888;
+
     font-size: 13pt;
-    font-weight: bolder;
+
+    font-weight: bold;
+
+    padding: 5px;
 }
-table#tabelaspec caption span{
+
+table#tabelaspec caption span {
     display: block;
+
     float: right;
-    color: #000;
+
+    color: #000000;
+
     font-size: 8pt;
 }
 
 
 /* ==============================
-ARTIGO
-============================== */
-
-article#noticia-principal h1 {
-font-size: 28px;
-color: #606060;
-margin-bottom: 5px;
-}
-
-article#noticia-principal h2 {
-color: #606060;
-font-size: 22px;
-margin-top: 25px;
-margin-bottom: 10px;
-}
-
-article#noticia-principal h3 {
-font-size: 15px;
-color: #888888;
-}
-
-article#noticia-principal p {
-text-align: justify;
-text-indent: 30px;
-line-height: 1.6;
-margin-bottom: 15px;
-}
-
-.direita {
-text-align: right;
-}
-
-/* ==============================
-IMAGEM COM LEGENDA
+   IMAGEM COM LEGENDA
 ============================== */
 
 figure.foto-legenda {
-position: relative;
-border: 5px solid #ffffff;
-box-shadow: 1px 1px 4px #333333;
-margin: 20px auto;
-max-width: 620px;
+    position: relative;
+
+    border: 5px solid #ffffff;
+
+    box-shadow: 1px 1px 4px #333333;
+
+    margin: 20px auto;
+
+    max-width: 620px;
+
+    overflow: hidden;
 }
 
 figure.foto-legenda img {
-width: 100%;
-display: block;
+    width: 100%;
+
+    display: block;
 }
 
 figure.foto-legenda figcaption {
-position: absolute;
-bottom: 0;
-width: 100%;
-padding: 10px;
-background-color: rgba(0, 0, 0, 0.65);
-color: #ffffff;
-opacity: 0;
-transition: opacity 0.5s;
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 10px;
+
+    background-color: rgba(0, 0, 0, 0.65);
+
+    color: #ffffff;
+
+    opacity: 0;
+
+    transition: opacity 0.5s;
 }
 
 figure.foto-legenda:hover figcaption {
-opacity: 1;
+    opacity: 1;
 }
 
 figure.foto-legenda figcaption h3 {
-color: #ffffff;
-font-size: 20px;
+    color: #ffffff;
+
+    font-size: 20px;
 }
 
 figure.foto-legenda figcaption p {
-color: #ffffff;
-text-indent: 0;
-margin: 0;
+    color: #ffffff;
+
+    text-indent: 0;
+
+    margin: 0;
 }
 
+
 /* ==============================
-LISTA
+   LISTA
 ============================== */
 
 article#noticia-principal ul {
-margin: 15px 0 15px 40px;
-line-height: 1.8;
+    margin: 15px 0 15px 40px;
+
+    line-height: 1.8;
 }
 
+
 /* ==============================
-LATERAL
+   VÍDEO
+============================== */
+
+div#tv {
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+video#filme {
+    width: 100%;
+
+    max-width: 620px;
+
+    display: block;
+
+    margin: 20px auto;
+}
+
+
+/* ==============================
+   LATERAL
 ============================== */
 
 aside#lateral h1 {
-color: #606060;
-font-size: 25px;
-margin-bottom: 10px;
+    color: #606060;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
 }
 
 aside#lateral h2 {
-color: #888888;
-font-size: 18px;
-margin-bottom: 10px;
+    color: #888888;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
 }
 
 aside#lateral p {
-text-align: justify;
-line-height: 1.5;
-margin-bottom: 20px;
+    text-align: justify;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
 }
 
+aside#lateral video {
+    width: 100%;
+
+    max-width: 320px;
+
+    display: block;
+
+    margin: 10px auto 20px;
+}
+
+
 /* ==============================
-RODAPÉ
+   RODAPÉ
 ============================== */
 
 footer#rodape {
-clear: both;
-border-top: 1px solid #606060;
-padding: 15px;
-text-align: center;
-color: #606060;
+    clear: both;
+
+    border-top: 1px solid #606060;
+
+    padding: 15px;
+
+    text-align: center;
+
+    color: #606060;
 }
 
 footer#rodape p {
-margin: 5px;
+    margin: 5px;
 }
 
+footer#rodape a {
+    color: #606060;
+
+    text-decoration: none;
+}
+
+footer#rodape a:hover {
+    text-decoration: underline;
+}
+
+
 /* ==============================
-RESPONSIVIDADE
+   RESPONSIVIDADE
 ============================== */
 
 @media (max-width: 1000px) {
 
+    div#interface {
+        width: 95%;
+    }
 
-div#interface {
-    width: 95%;
+    main#principal {
+        flex-direction: column;
+    }
+
+    section#corpo,
+    aside#lateral {
+        width: 100%;
+    }
+
+    aside#lateral {
+        border-left: none;
+
+        border-top: 1px solid #cccccc;
+
+        padding: 20px 0 0;
+    }
+
 }
 
-main#principal {
-    flex-direction: column;
-}
 
-section#corpo,
-aside#lateral {
-    width: 100%;
-}
-
-aside#lateral {
-    border-left: none;
-    border-top: 1px solid #cccccc;
-    padding: 20px 0 0;
-}
-
-}
+/* ==============================
+   CELULAR
+============================== */
 
 @media (max-width: 600px) {
 
+    div#interface {
+        width: 100%;
 
-header#cabecalho {
-    height: 260px;
+        margin: 0;
+    }
+
+    header#cabecalho {
+        height: 300px;
+
+        background-position: center 120px;
+    }
+
+    header#cabecalho hgroup {
+        position: relative;
+
+        left: 0;
+        top: 10px;
+
+        text-align: center;
+    }
+
+    header#cabecalho h1 {
+        font-size: 28px;
+    }
+
+    header#cabecalho h2 {
+        font-size: 16px;
+    }
+
+    img#icone {
+        position: relative;
+
+        display: block;
+
+        right: auto;
+        top: auto;
+
+        width: 130px;
+
+        margin: 20px auto 0;
+    }
+
+    nav#menu {
+        padding: 5px;
+    }
+
+    nav#menu ul {
+        flex-wrap: wrap;
+
+        gap: 2px;
+    }
+
+    nav#menu a {
+        font-size: 14px;
+
+        padding: 6px 8px;
+    }
+
+    main#principal {
+        padding: 10px;
+
+        gap: 20px;
+    }
+
+    article#noticia-principal h1 {
+        font-size: 24px;
+    }
+
+    article#noticia-principal h2 {
+        font-size: 19px;
+    }
+
+    figure.foto-legenda {
+        max-width: 100%;
+    }
+
+    table#tabelaspec {
+        font-size: 14px;
+    }
+
 }
 
-header#cabecalho hgroup {
-    position: relative;
-    left: 0;
-    top: 10px;
-    text-align: center;
-}
 
-header#cabecalho h1 {
-    font-size: 28px;
-}
-
-header#cabecalho h2 {
-    font-size: 16px;
-}
-
-img#icone {
-    position: relative;
-    display: block;
-    margin: 20px auto 0;
-    right: auto;
-    width: 130px;
-}
-
-nav#menu ul {
-    flex-wrap: wrap;
-}
-
-nav#menu a {
-    font-size: 14px;
-    padding: 6px 8px;
-}
-
-main#principal {
-    padding: 10px;
-}
-
-
-}
