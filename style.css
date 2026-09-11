@@ -1,5 +1,8 @@
 @charset "UTF-8";
-
+@font-face {
+    font-family:'FonteLogo' ;
+    src: url(./_fonts/bubblegum-sans-regular.otf);
+}
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
 
 /* ==============================
@@ -19,8 +22,8 @@ color: #333333;
 }
 
 div#interface {
-width: 1000px;
-margin: 0 auto;
+width: 900px;
+margin: -20px auto 10px auto;
 background-color: #ffffff;
 padding: 10px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -34,6 +37,7 @@ header#cabecalho {
 position: relative;
 height: 180px;
 border-bottom: 1px solid #606060;
+background: url("./_imagens/glass-logo-peq.jpg")no-repeat 0px 100px;
 }
 
 header#cabecalho hgroup {
@@ -43,13 +47,20 @@ top: 20px;
 }
 
 header#cabecalho h1 {
-font-size: 36px;
+font-family: 'FonteLogo';
+margin-bottom: 0px;
+padding: 0px;
+font-size: 30pt;
 color: #606060;
 font-weight: 600;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
 header#cabecalho h2 {
+    font-family: 'Titillium Web',sans-serif;
+margin-top: 0px;
 font-size: 20px;
+padding: 0px;
 color: #888888;
 font-weight: 400;
 }
@@ -113,15 +124,29 @@ padding: 20px;
 }
 
 section#corpo {
+display: block;
 width: 650px;
+float: left;
 }
 
 aside#lateral {
-width: 250px;
+display: block;
+width: 350px;
 border-left: 1px solid #cccccc;
 padding-left: 20px;
 }
 
+/* ==============================
+TABELA
+============================== */
+table#tabelaspec {
+    border: 1px solid #333333;
+}
+table#tabelaspec td{ 
+    border: 1px solid #606060;
+    padding: 10px;
+
+}
 /* ==============================
 ARTIGO
 ============================== */
