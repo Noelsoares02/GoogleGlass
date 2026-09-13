@@ -49,11 +49,12 @@ div#interface {
 ============================== */
 
 header#cabecalho {
+   
     position: relative;
     height: 200px;
     border-bottom: 1px solid #606060;
 
-    background: url('./_imagens/glass-logo-peq.jpg')
+    background: url('./_imagens/glass-logo-peq.jpg') 
         no-repeat 0px 100px;
 }
 

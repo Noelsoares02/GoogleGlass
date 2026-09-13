@@ -3,163 +3,137 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Google Glass - Multimídia</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="_css/media.css">
 
+    <script>
+        function mudaFoto(foto) {
+            document.getElementById("icone").src = foto;
+        }
+    </script>
 </head>
-<script>
-    function mudaFoto (foto){
-        document.getElementById("icone").src=foto;
-    }
 
-</script>
 <body>
 
     <div id="interface">
 
-        <!-- =========================
-             CABEÇALHO
-        ========================== -->
-
+        <!-- CABEÇALHO -->
         <header id="cabecalho">
 
             <hgroup>
-
                 <h1>Google Glass</h1>
-
                 <h2>A revolução do Google está chegando</h2>
-
             </hgroup>
 
-            <!-- IMAGEM DO GOOGLE GLASS -->
+            <img id="icone"
+                 src="./_imagens/multimidia.png"
+                 alt="Multimídia">
 
-            <img id="icone" src="./_imagens/multimidia.png" alt="Multimidea">
-
-
-            <!-- =========================
-                 MENU PRINCIPAL
-            ========================== -->
-
+            <!-- MENU PRINCIPAL -->
             <nav id="menu">
 
                 <h1>Menu Principal</h1>
 
                 <ul>
-    <li onmouseover="mudaFoto('_imagens/home.png')"
-        onmouseout="mudaFoto('_imagens/multimidia.png')">
-        <a href="index.html">Home</a>
-    </li>
+                    <li onmouseover="mudaFoto('./_imagens/home.png')"
+                        onmouseout="mudaFoto('./_imagens/multimidia.png')">
+                        <a href="index.html">Home</a>
+                    </li>
 
-    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
-        onmouseout="mudaFoto('_imagens/multimidia.png')">
-        <a href="specs.html">Especificações</a>
-    </li>
+                    <li onmouseover="mudaFoto('./_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto('./_imagens/multimidia.png')">
+                        <a href="specs.html">Especificações</a>
+                    </li>
 
-    <li onmouseover="mudaFoto('_imagens/fotos.png')"
-        onmouseout="mudaFoto('_imagens/multimidia.png')">
-        <a href="fotos.html">Fotos</a>
-    </li>
+                    <li onmouseover="mudaFoto('./_imagens/fotos.png')"
+                        onmouseout="mudaFoto('./_imagens/multimidia.png')">
+                        <a href="fotos.html">Fotos</a>
+                    </li>
 
-    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
-        onmouseout="mudaFoto('_imagens/multimidia.png')">
-        <a href="multimidia.html">Multimídia</a>
-    </li>
+                    <li onmouseover="mudaFoto('./_imagens/multimidia.png')"
+                        onmouseout="mudaFoto('./_imagens/multimidia.png')">
+                        <a href="multimidia.html">Multimídia</a>
+                    </li>
 
-    <li onmouseover="mudaFoto('_imagens/contato.png')"
-        onmouseout="mudaFoto('_imagens/multimidia.png')">
-        <a href="fale-conosco.html">Fale conosco</a>
-    </li>
-</ul>
+                    <li onmouseover="mudaFoto('./_imagens/contato.png')"
+                        onmouseout="mudaFoto('./_imagens/multimidia.png')">
+                        <a href="fale-conosco.html">Fale conosco</a>
+                    </li>
+                </ul>
+
             </nav>
 
         </header>
 
-
-        <!-- =========================
-             CORPO DA PÁGINA
-        ========================== -->
-
-        <section id="corpo">
+        <!-- CORPO DA PÁGINA -->
+        
 
             <article id="noticia-principal">
 
                 <header id="cabecalho-artigo">
 
                     <hgroup>
-
                         <h3>Glass &gt; Multimídia</h3>
 
                         <h1>Sons e Vídeos</h1>
 
-                        <h2>por Gustavo Guanabara</h2>
+                        <h2>Por Gustavo Guanabara</h2>
 
                         <h3 class="direita">
                             Atualizado em 01/Maio/2013
                         </h3>
-
                     </hgroup>
 
                 </header>
 
-
-                <!-- =========================
-                     ÁUDIO E VÍDEO
-                ========================== -->
-
+                
                 <h2>Áudio e Vídeo</h2>
+                <div id="tv-radio">
+                    <h2>Áudio e Vídeo</h2>
+                    <!-- VÍDEO -->
+                    <video id="filme"
+                           controls
+                           poster="./_imagens/video-mini01.jpg"
+                           width="400">
 
+                        <source src="./_media/how-it-feels.mp4"
+                                type="video/mp4">
 
-                <!-- =========================
-                     VÍDEO
-                ========================== -->
+                        <source src="./_media/how-it-feels.ogv"
+                                type="video/ogg">
 
-                <video id="filme"
-                       controls
-                       poster="./_imagens/radio-tv.png"
-                       width="500">
+                        <source src="./_media/how-it-feels.webm"
+                                type="video/webm">
 
-                    <source src="media/video-glass.mp4"
-                            type="video/mp4">
+                        Seu navegador não suporta vídeos em HTML5.
 
-                    <source src="media/video-glass.webm"
-                            type="video/webm">
+                    </video>
 
-                    Seu navegador não suporta vídeos em HTML5.
+                    <!-- ÁUDIO -->
+                    <audio id="musica" controls>
 
-                </video>
+                        <source src="./_media/2009-lovers-carvings-bibio.mp3"
+                                type="audio/mpeg">
 
+                        <source src="./_media/2009-lovers-carvings-bibio.ogg"
+                                type="audio/ogg">
 
-                <!-- =========================
-                     ÁUDIO
-                ========================== -->
+                        Seu navegador não suporta áudio em HTML5.
 
-                <audio id="musica"
-                       controls>
+                    </audio>
 
-                    <source src="media/audio-glass.mp3"
-                            type="audio/mpeg">
-
-                    <source src="media/audio-glass.ogg"
-                            type="audio/ogg">
-
-                    Seu navegador não suporta áudio em HTML5.
-
-                </audio>
+                </div>
 
             </article>
 
         </section>
 
-
-        <!-- =========================
-             RODAPÉ
-        ========================== -->
-
+        <!-- RODAPÉ -->
         <footer id="rodape">
 
             <p>
@@ -167,11 +141,8 @@
             </p>
 
             <p>
-
-                <a href="#">Facebook</a>
-                |
+                <a href="#">Facebook</a> |
                 <a href="#">Twitter</a>
-
             </p>
 
         </footer>
@@ -181,4 +152,3 @@
 </body>
 
 </html>
-
