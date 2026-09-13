@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -13,7 +12,12 @@
     <link rel="stylesheet" href="_css/specs.css">
 
 </head>
+    <script>
+    function mudaFoto (foto){
+        document.getElementById("icone").src=foto;
+    }
 
+</script>
 <body>
 
     <div id="interface">
@@ -48,31 +52,31 @@
                 <h1>Menu Principal</h1>
 
                 <ul>
-    <li onmouseover="mudaFoto('_imagens/home.png')"
-        onmouseout="mudaFoto('_imagens/especificacoes.png')">
-        <a href="index.html">Home</a>
-    </li>
+                    <li onmouseover="mudaFoto('_imagens/home.png')"
+                        onmouseout="mudaFoto('_imagens/especificacoes.png')">
+                        <a href="index.html">Home</a>
+                    </li>
 
-    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
-        onmouseout="mudaFoto('_imagens/especificacoes.png')">
-        <a href="specs.html">Especificações</a>
-    </li>
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto('_imagens/especificacoes.png')">
+                        <a href="specs.html">Especificações</a>
+                    </li>
 
-    <li onmouseover="mudaFoto('_imagens/fotos.png')"
-        onmouseout="mudaFoto('_imagens/especificacoes.png')">
-        <a href="fotos.html">Fotos</a>
-    </li>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')"
+                        onmouseout="mudaFoto('_imagens/especificacoes.png')">
+                        <a href="fotos.html">Fotos</a>
+                    </li>
 
-    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
-        onmouseout="mudaFoto('_imagens/especificacoes.png')">
-        <a href="multimidia.html">Multimídia</a>
-    </li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
+                        onmouseout="mudaFoto('_imagens/especificacoes.png')">
+                        <a href="multimidia.html">Multimídia</a>
+                    </li>
 
-    <li onmouseover="mudaFoto('_imagens/contato.png')"
-        onmouseout="mudaFoto('_imagens/especificacoes.png')">
-        <a href="fale-conosco.html">Fale conosco</a>
-    </li>
-</ul>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')"
+                        onmouseout="mudaFoto('_imagens/especificacoes.png')">
+                        <a href="fale-conosco.html">Fale conosco</a>
+                    </li>
+                </ul>
 
             </nav>
 
@@ -124,56 +128,39 @@
 
                 <section id="conteudo">
 
-                    <img src="_imagens/glass-esquema-marcado.jpg"
-                         alt="Raio-X do Google Glass"
-                         usemap="#meumapa">
-                         <iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+                    <img src="_imagens/glass-esquema-marcado.jpg" alt="Raio-X do Google Glass" usemap="#meumapa">
+                    <iframe src="google-glass.html#tela" name="janela" id="frame-spec" frameborder="0">
+                    </iframe>
+
 
                     <map name="meumapa">
 
                         <!-- PROCESSADOR -->
 
-                        <area shape="poly"
-                              coords="160,120,190,100,220,120,210,150,180,155"
-                              href="processador.html"
-                              target="_blank"
-                              alt="Processador">
+                        <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores"
+                            target="janela" alt="Processador">
 
 
                         <!-- CÂMERA -->
 
-                        <area shape="circle"
-                              coords="350,105,25"
-                              href="camera.html"
-                              target="_blank"
-                              alt="Câmera">
+                        <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela" alt="Câmera">
 
 
                         <!-- BATERIA -->
 
-                        <area shape="poly"
-                              coords="430,190,470,175,500,200,485,235,445,225"
-                              href="bateria.html"
-                              target="_blank"
-                              alt="Bateria">
+                        <area shape="circle" coords="73,52,12" href="google-glass.html#gadgets"
+                            target="janela" alt="Bateria">
 
 
                         <!-- TELA -->
 
-                        <area shape="poly"
-                              coords="250,200,290,180,330,195,325,230,275,235"
-                              href="tela.html"
-                              target="_blank"
-                              alt="Tela">
+                        <area shape="rect" coords="179,202,270,260" href="google-glass.html#tela"
+                            target="janela" alt="Tela">
 
 
                         <!-- ÁUDIO -->
 
-                        <area shape="circle"
-                              coords="125,250,20"
-                              href="audio.html"
-                              target="_blank"
-                              alt="Áudio">
+                        <area shape="circle" coords="125,250,20" href="google-glass.html" target="_blank" alt="Áudio">
 
                     </map>
 
@@ -191,7 +178,7 @@
         <footer id="rodape">
 
             <p>
-                Copyright &copy; 2013 - by Gustavo Guanabara
+                Copyright &copy; 2013 - by Noel soares
             </p>
 
             <p>
