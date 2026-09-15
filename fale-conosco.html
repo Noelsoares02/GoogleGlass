@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -8,17 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Google Glass - Fale Conosco</title>
-
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/form.css">
     <link rel="stylesheet" href="style.css">
 
-    <script src="funcoes.js"></script>
+    <script language="javascript" src="_javascript/funcoes.js"></script>
 
 </head>
 <script>
-    function mudaFoto (foto){
-        document.getElementById("icone").src=foto;
+    function mudaFoto(foto) {
+        document.getElementById("icone").src = foto;
     }
 
+</script>
+<script>
+    function calc_total(){
+        var qtd = (document.getElementById('cQtd').value);
+        tot = qtd * 2500;
+        document.getElementById('cTot'). value = tot;
+    }
 </script>
 
 <body>
@@ -54,31 +61,31 @@
                 <h1>Menu Principal</h1>
 
                 <ul>
-    <li onmouseover="mudaFoto('_imagens/home.png')"
-        onmouseout="mudaFoto('_imagens/especificacoes-02.png')">
-        <a href="index.html">Home</a>
-    </li>
+                    <li onmouseover="mudaFoto('_imagens/home.png')"
+                        onmouseout="mudaFoto('_imagens/especificacoes-02.png')">
+                        <a href="index.html">Home</a>
+                    </li>
 
-    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
-        onmouseout="mudaFoto('_imagens/especificacoes-02.png')">
-        <a href="specs.html">Especificações</a>
-    </li>
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto('_imagens/especificacoes-02.png')">
+                        <a href="specs.html">Especificações</a>
+                    </li>
 
-    <li onmouseover="mudaFoto('_imagens/fotos.png')"
-        onmouseout="mudaFoto('_imagens/especificacoes-02.png')">
-        <a href="fotos.html">Fotos</a>
-    </li>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')"
+                        onmouseout="mudaFoto('_imagens/especificacoes-02.png')">
+                        <a href="fotos.html">Fotos</a>
+                    </li>
 
-    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
-        onmouseout="mudaFoto('_imagens/especificacoes-02.png')">
-        <a href="multimidia.html">Multimídia</a>
-    </li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
+                        onmouseout="mudaFoto('_imagens/especificacoes-02.png')">
+                        <a href="multimidia.html">Multimídia</a>
+                    </li>
 
-    <li onmouseover="mudaFoto('_imagens/contato.png')"
-        onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')">
-        <a href="fale-conosco.html">Fale conosco</a>
-    </li>
-</ul>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')"
+                        onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')">
+                        <a href="fale-conosco.html">Fale conosco</a>
+                    </li>
+                </ul>
 
             </nav>
 
@@ -124,10 +131,7 @@
                      FORMULÁRIO
                 ========================== -->
 
-                <form method="post"
-                      id="fContato"
-                      action="mailto:seuemail@email.com"
-                      oninput="calc_total();">
+                <form method="post" id="fContato" action="mailto:seuemail@email.com" oninput="calc_total();">
 
 
                     <!-- =========================
@@ -147,12 +151,8 @@
                                 Nome:
                             </label>
 
-                            <input type="text"
-                                   name="tNome"
-                                   id="cNome"
-                                   size="30"
-                                   maxlength="40"
-                                   placeholder="Nome completo">
+                            <input type="text" name="tNome" id="cNome" size="30" maxlength="40"
+                                placeholder="Nome completo">
 
                         </p>
 
@@ -163,12 +163,8 @@
                                 Senha:
                             </label>
 
-                            <input type="password"
-                                   name="tSenha"
-                                   id="cSenha"
-                                   size="20"
-                                   maxlength="20"
-                                   placeholder="Senha">
+                            <input type="password" name="tSenha" id="cSenha" size="20" maxlength="20"
+                                placeholder="Senha">
 
                         </p>
 
@@ -179,12 +175,8 @@
                                 E-mail:
                             </label>
 
-                            <input type="email"
-                                   name="tEmail"
-                                   id="cEmail"
-                                   size="30"
-                                   maxlength="40"
-                                   placeholder="seu@email.com">
+                            <input type="email" name="tEmail" id="cEmail" size="30" maxlength="40"
+                                placeholder="seu@email.com">
 
                         </p>
 
@@ -197,21 +189,14 @@
                                 Sexo:
                             </label>
 
-                            <input type="radio"
-                                   name="tSexo"
-                                   id="cMasc"
-                                   value="Masculino"
-                                   checked>
+                            <input type="radio" name="tSexo" id="cMasc" value="Masculino" checked>
 
                             <label for="cMasc">
                                 Masculino
                             </label>
 
 
-                            <input type="radio"
-                                   name="tSexo"
-                                   id="cFem"
-                                   value="Feminino">
+                            <input type="radio" name="tSexo" id="cFem" value="Feminino">
 
                             <label for="cFem">
                                 Feminino
@@ -228,9 +213,7 @@
                                 Data de Nascimento:
                             </label>
 
-                            <input type="date"
-                                   name="tNasc"
-                                   id="cNasc">
+                            <input type="date" name="tNasc" id="cNasc">
 
                         </p>
 
@@ -254,12 +237,8 @@
                                 Logradouro:
                             </label>
 
-                            <input type="text"
-                                   name="tRua"
-                                   id="cRua"
-                                   size="30"
-                                   maxlength="80"
-                                   placeholder="Rua, Avenida...">
+                            <input type="text" name="tRua" id="cRua" size="30" maxlength="80"
+                                placeholder="Rua, Avenida...">
 
                         </p>
 
@@ -270,11 +249,7 @@
                                 Número:
                             </label>
 
-                            <input type="number"
-                                   name="tNum"
-                                   id="cNum"
-                                   min="0"
-                                   max="99999">
+                            <input type="number" name="tNum" id="cNum" min="0" max="99999">
 
                         </p>
 
@@ -286,50 +261,50 @@
                             </label>
 
                             <select name="tEst" id="cEst">
-    <option value="">-- Escolha seu estado --</option>
+                                <option value="">-- Escolha seu estado --</option>
 
-    <optgroup label="Região Norte">
-        <option value="AC">Acre</option>
-        <option value="AP">Amapá</option>
-        <option value="AM">Amazonas</option>
-        <option value="PA">Pará</option>
-        <option value="RO">Rondônia</option>
-        <option value="RR">Roraima</option>
-        <option value="TO">Tocantins</option>
-    </optgroup>
+                                <optgroup label="Região Norte">
+                                    <option value="AC">Acre</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="TO">Tocantins</option>
+                                </optgroup>
 
-    <optgroup label="Região Nordeste">
-        <option value="AL">Alagoas</option>
-        <option value="BA">Bahia</option>
-        <option value="CE">Ceará</option>
-        <option value="MA">Maranhão</option>
-        <option value="PB">Paraíba</option>
-        <option value="PE">Pernambuco</option>
-        <option value="PI">Piauí</option>
-        <option value="RN">Rio Grande do Norte</option>
-        <option value="SE">Sergipe</option>
-    </optgroup>
+                                <optgroup label="Região Nordeste">
+                                    <option value="AL">Alagoas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="SE">Sergipe</option>
+                                </optgroup>
 
-    <optgroup label="Região Centro-Oeste">
-        <option value="DF">Distrito Federal</option>
-        <option value="GO">Goiás</option>
-        <option value="MT">Mato Grosso</option>
-        <option value="MS">Mato Grosso do Sul</option>
-    </optgroup>
+                                <optgroup label="Região Centro-Oeste">
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                </optgroup>
 
-    <optgroup label="Região Sudeste">
-        <option value="ES">Espírito Santo</option>
-        <option value="MG">Minas Gerais</option>
-        <option value="RJ">Rio de Janeiro</option>
-        <option value="SP">São Paulo</option>
-    </optgroup>
+                                <optgroup label="Região Sudeste">
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                </optgroup>
 
-    <optgroup label="Região Sul">
-        <option value="PR">Paraná</option>
-        <option value="RS">Rio Grande do Sul</option>
-        <option value="SC">Santa Catarina</option>
-    </optgroup>
-</select>
+                                <optgroup label="Região Sul">
+                                    <option value="PR">Paraná</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="SC">Santa Catarina</option>
+                                </optgroup>
+                            </select>
 
 
                         </p>
@@ -341,12 +316,7 @@
                                 Cidade:
                             </label>
 
-                            <input type="text"
-                                   name="tCid"
-                                   id="cCid"
-                                   size="30"
-                                   maxlength="40"
-                                   placeholder="Sua cidade">
+                            <input type="text" name="tCid" id="cCid" size="30" maxlength="40" placeholder="Sua cidade">
 
                         </p>
 
@@ -372,12 +342,7 @@
 
                             Mínimo
 
-                            <input type="range"
-                                   name="tUrg"
-                                   id="cUrg"
-                                   min="0"
-                                   max="10"
-                                   value="5">
+                            <input type="range" name="tUrg" id="cUrg" min="0" max="10" value="5">
 
                             Máximo
 
@@ -390,11 +355,8 @@
                                 Mensagem:
                             </label>
 
-                            <textarea name="tMsg"
-                                      id="cMsg"
-                                      cols="35"
-                                      rows="5"
-                                      placeholder="Digite sua mensagem..."></textarea>
+                            <textarea name="tMsg" id="cMsg" cols="35" rows="5"
+                                placeholder="Digite sua mensagem..."></textarea>
 
                         </p>
 
@@ -414,9 +376,7 @@
 
                         <p>
 
-                            <input type="checkbox"
-                                   name="tPed"
-                                   id="cPed">
+                            <input type="checkbox" name="tPed" id="cPed">
 
                             <label for="cPed">
                                 Gostaria de adquirir um Google Glass
@@ -434,10 +394,7 @@
                                 Cor:
                             </label>
 
-                            <input type="color"
-                                   name="tCor"
-                                   id="cCor"
-                                   value="#ffffff">
+                            <input type="color" name="tCor" id="cCor" value="#ffffff">
 
                         </p>
 
@@ -450,12 +407,7 @@
                                 Quantidade:
                             </label>
 
-                            <input type="number"
-                                   name="tQtd"
-                                   id="cQtd"
-                                   min="0"
-                                   max="5"
-                                   value="0">
+                            <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0">
 
                         </p>
 
@@ -468,11 +420,7 @@
                                 Preço Total: R$
                             </label>
 
-                            <input type="text"
-                                   name="tTot"
-                                   id="cTot"
-                                   placeholder="Total"
-                                   readonly>
+                            <input type="text" name="tTot" id="cTot" placeholder="Total" readonly>
 
                         </p>
 
@@ -483,9 +431,7 @@
                          BOTÃO
                     ========================== -->
 
-                    <input type="submit"
-                           value="Enviar"
-                           class="botao-enviar">
+                    <input type="submit" value="Enviar" class="botao-enviar">
 
                 </form>
 
@@ -525,4 +471,3 @@
 </body>
 
 </html>
-
