@@ -5,6 +5,20 @@
 
 @media screen and (max-width: 1050px) {
 
+    div#tv-radio {
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background: url("../_imagens/radio-tv.png") no-repeat;
+    
+    }
+    div#musica{
+        display: block;
+        position: relative;
+        left:400px ;
+        top: 300px;
+    }
+
     div#interface {
         width: 95%;
         margin: 0 auto;
