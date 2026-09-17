@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+header#cabecalho {
+   
+    position: relative;
+    height: 200px;
+    border-bottom: 1px solid #606060;
+
+    background: url('./_imagens/glass-logo-peq.jpg') 
+        no-repeat 0px 100px;
+}
 form {
     width: 500px;
     margin: auto;
